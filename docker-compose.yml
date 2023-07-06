@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  app1:
+      image: php:apache
+      ports:
+          - 8091:80
+      volumes:
+          - ./app1:/var/www/html
+
+  app2:
+      image: php:apache
+      ports:
+          - 8092:80
+      volumes:
+          - ./app2:/var/www/html
